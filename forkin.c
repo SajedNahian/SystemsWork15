@@ -19,7 +19,7 @@ int main()
 			printf("Child with id: %d is sleeping for %d seconds. Be quiet!\n", getpid(), *randomSeconds);
 			sleep(*randomSeconds);
 			printf("Child with id: %d has woken up!\n", getpid());
-            // allow parent to get how long the child slept for
+			// allow parent to get how long the child slept for
 			exit(*randomSeconds);
 		}
 	}
